@@ -1,0 +1,22 @@
+{
+  "name": "project-sidehustle",
+  "version": "1.0.0",
+  "description": "the buy and sell platform",
+  "main": "index.js",
+  "scripts": {
+   "build-css":"tailwindcss build src/styles.css -o public/stlyes.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Newagesoftware1/Project-sidehustle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Newagesoftware1/Project-sidehustle/issues"
+  },
+  "homepage": "https://github.com/Newagesoftware1/Project-sidehustle#readme",
+  "dependencies": {
+    "tailwindcss": "^1.9.6"
+  }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="/assets/favicon.nav__icon">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/search.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <title>Profile</title>
+  <!-- materialize icons, css & js -->
+  <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="/css/styles.css" rel="stylesheet">
+  
+
+  <style>
+    h5 {
+      color: brown;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="grey lighten-4">
+
+  <!-- top nav -->
+  <nav class="z-depth-0">
+    <div class="nav-wrapper container">
+      <a href="/">Food<span>Ninja</span></a>
+      <span class="right grey-text text-darken-1">
+        <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+      </span>
+    </div>
+  </nav>
+
+  <!-- side nav -->
+  <ul id="side-menu" class="sidenav side-menu">
+    <li><a class="subheader">SideHustle</a></li>
+    <li><a href="/" class="waves-effect">Home</a></li>
+    <li class="logged-in" style="display: none;">
+      <a href="#" class="grey-text modal-trigger" data-target="modal-account">Account</a>
+    </li>
+    <li class="logged-in" style="display: none;">
+      <a href="#" class="grey-text" id="logout">Logout</a>
+    </li>
+    <li class="logged-out">
+      <a href="#" class="grey-text modal-trigger" data-target="modal-login">Login</a>
+    </li>
+    <li class="logged-out">
+      <a href="#" class="grey-text modal-trigger" data-target="modal-signup">Sign up</a>
+    </li>
+  </ul>
+
+  <!-- content -->
+<div class="container grey-text">
+    <h5 class="center">Profile coming soon! get impressions the other is the looking for page</h5>
+  </div>
+
+
+
+      <!-- NAVBAR -->
+
+    
+      <!-- SIGN UP MODAL -->
+      <div id="modal-signup" class="modal">
+        <div class="modal-content">
+          <h4>Sign up</h4><br />
+          <form id="signup-form">
+            <div class="input-field">
+              <input type="email" id="signup-email" required />
+              <label for="signup-email">Email address</label>
+            </div>
+            <div class="input-field">
+              <input type="password" id="signup-password" required />
+              <label for="signup-password">Choose password</label>
+            </div>
+            <button class="btn yellow darken-2 z-depth-0">Sign up</button>
+          </form>
+        </div>
+      </div>
+    
+      <!-- LOGIN MODAL -->
+      <div id="modal-login" class="modal">
+        <div class="modal-content">
+          <h4>Login</h4><br />
+          <form id="login-form">
+            <div class="input-field">
+              <input type="email" id="login-email" required />
+              <label for="login-email">Email address</label>
+            </div>
+            <div class="input-field">
+              <input type="password" id="login-password" required />
+              <label for="login-password">Your password</label>
+            </div>
+            <button class="btn yellow darken-2 z-depth-0">Login</button>
+          </form>
+        </div>
+      </div>
+    
+      <!-- ACCOUNT MODAL -->
+      <div id="modal-account" class="modal">
+        <div class="modal-content center-align">
+          <h4>Account details</h4><br />
+          <div class="account-details"></div>
+          <div class="account-extras"></div>
+        </div>
+      </div>
+    
+   <!-- CREATE Hustle MODAL -->
+   <div id="modal-create" class="modal">
+    <div class="modal-content">
+      <h4>Create Hustle</h4><br />
+      <form id="create-form">
+        <div class="input-field">
+          <input type="text" id="title" required>
+          <label for="title">item</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="description" required>
+          <label for="title">Description</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="price" required>
+          <label for="title">Price</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="location" required>
+          <label for="title">Location</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="verified" required>
+          <label for="title">verified</label>
+        </div>
+        <button class="btn yellow darken-2 z-depth-0">Create</button>
+      </form>
+    </div>
+  </div>
+    
+      <!-- Hustle LIST -->
+      <div class="container" style="margin-top: 40px;">
+        <ul class="collapsible z-depth-0 hustles" style="border: none;">
+        
+        </ul>
+      </div>
+      
+
+
+        <!-- Bottom nav -->
+        <nav class="nav">
+          <a href="/" class="nav__link ">
+            <i class="material-icons nav__icon">home</i>
+            <span class="nav__text">Home</span>
+          </a>
+          <a href="/vstore/vstore.html" class="nav__link ">
+            <i class="material-icons nav__icon">store</i>
+            <span class="nav__text">Market</span>
+          </a>
+          <a href="#" class="nav__link modal-trigger" data-target="modal-create">
+            <i class="material-icons nav__icon">add_circle_outline</i>
+            <span class="nav__text">add</span>
+          </a>
+          <a href="/chatspage/chatspage.html" class="nav__link">
+            <i class="material-icons nav__icon">mail</i>
+            <span class="nav__text">chats</span>
+          </a>
+          <a href="/profile/profile.html" class="nav__link nav__link--active">
+            <i class="material-icons nav__icon">person</i>
+            <span class="nav__text">profile</span>
+          </a>
+        </nav>
+  
+
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+<!-- TOD: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCTaJVxnUliTUv7IwXkyYfS7qRorBxIQ1o",
+    authDomain: "side-hustle-43a1d.firebaseapp.com",
+    databaseURL: "https://side-hustle-43a1d.firebaseio.com",
+    projectId: "side-hustle-43a1d",
+    appId: "1:433033803507:web:1c732e5ae8744b045d6986",
+    measurementId: "G-FWDPXBJQCR"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  //make auth and firestore references 
+  const auth = firebase.auth();
+  const db = firebase.firestore(); 
+//update firestore settings
+db.settings({ timestampInSnapshots:true});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+  <script src="/js/auth.js"></script>
+  <script src="/js/ui.js"></script>
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
+
+</body>
+</html>
